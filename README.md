@@ -7,7 +7,7 @@ Tuesday to-do:
     connect to/or create the generator - complete
     iterate through fact - complete 
     post the fact to the page
-        --event listener for button click
+        --event listener for button click - complete 
         -- create new HTML elements & append these to the DOM - complete 
     try to create this codde as modular pieces to apply to other features
 

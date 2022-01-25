@@ -5,6 +5,11 @@ const randomJokeDiv = document.querySelector("#post-block");
 const jokeButton = document.querySelector("#chuck-btn");
 // console.log(randomJokeDiv)
 
+//moved these 2 variables into the global scope from their original place inside the joke button event listener.
+//this made a new joke appear every time btn is clicked, instead of them all listing out, which is optimal imo.
+let generatedJoke = document.createElement("p");
+let likeBtn = document.createElement("button");
+
 const JSON_URL = "http://localhost:3000/value";
 
 //   const postEl = document.createElement('p')
@@ -31,9 +36,7 @@ function renderJoke(JokeArr) {
       newJokeArray[Math.floor(Math.random() * newJokeArray.length)];
     // console.log(randomJoke)
     //create a new p element for the joke to live
-    let generatedJoke = document.createElement("p");
-    //create a new button element for the like button for each joke
-    let likeBtn = document.createElement("button");
+
     //just an example here, added some innner text just to makie it look decent
     likeBtn.innerHTML = "  Like";
     generatedJoke.textContent = randomJoke;
@@ -45,5 +48,9 @@ function renderJoke(JokeArr) {
     //tried creating an even listener to render the jokes to the DOM. Stopped here.
   });
 }
+//Event listener for like button. We can add more sophisticated functionality to it, but for now it's working!
+likeBtn.addEventListener("click", () => {
+  likeBtn.textContent = "Liked!";
+});
 
 getJoke();
