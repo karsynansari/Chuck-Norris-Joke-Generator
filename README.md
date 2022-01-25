@@ -9,7 +9,7 @@ Tuesday to-do:
     post the fact to the page
         --event listener for button click
         -- create new HTML elements & append these to the DOM
-    try to create this codde as modular pieces to apply to other features
+    try to create this code as modular pieces to apply to other features
 
 -vote feature
     create containers for the vote
