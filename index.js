@@ -15,7 +15,11 @@ fetch(JSON_URL)
   }
 
 function renderJoke(JokeArr) {
-    JokeArr.forEach(joke => console.log(joke)) 
+    JokeArr.forEach(potato => {
+    let jokeValue =  potato.id
+    const jokePost = jokeValue[Math.random()* jokeValue.length]
+    console.log(jokePost)
+    }) 
     
     }
 
