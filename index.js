@@ -1,4 +1,4 @@
-console.log("hello");
+// console.log("hello");
 
 let JSON_URL = 'http://localhost:3000/value'
 
@@ -15,12 +15,17 @@ fetch(JSON_URL)
   }
 
 function renderJoke(JokeArr) {
-    JokeArr.forEach(jokeObject => {
-    const values = Object.values(jokeObject)
-    const prop = values[Math.floor(Math.random() * values.length)]
-console.log(prop);
+  console.log(JokeArr)
+    let newJokeArray = JokeArr.map(jokeObject => {
+      // console.log(jokeObject.joke)
+      return(jokeObject.joke)
+    // const values = Object.values(jokeObject)
+    
+// console.log(prop);
     
     })
+let randomJoke = newJokeArray[Math.floor(Math.random() * newJokeArray.length)]
+console.log(randomJoke)
 }
 
 getJoke();
