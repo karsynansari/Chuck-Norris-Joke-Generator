@@ -35,7 +35,7 @@ let generatedJoke = document.createElement("p")
 //create a new button element for the like button for each joke
 let likeBtn = document.createElement("button")
 //just an example here, added some innner text just to makie it look decent 
-likeBtn.innerHTML = "Like"
+likeBtn.innerHTML = "  Like"
 generatedJoke.textContent = randomJoke
 // console.log(generatedJoke)
 //append the new element to the parent div declared in DOM selectors 
