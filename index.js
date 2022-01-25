@@ -2,9 +2,9 @@ console.log("hello");
 
 let JSON_URL = 'http://localhost:3000/value'
 
-  const postEl = document.createElement('p')
-  const postJoke = document.getElementById('post-block')
-postJoke.appendChild(postEl)
+//   const postEl = document.createElement('p')
+//   const postJoke = document.getElementById('post-block')
+// postJoke.appendChild(postEl)
 
 
 function getJoke() {
@@ -15,30 +15,19 @@ fetch(JSON_URL)
   }
 
 function renderJoke(JokeArr) {
-    JokeArr.forEach(joke => console.log(joke)) 
+    JokeArr.forEach(jokeObject => {
+    const values = Object.values(jokeObject)
+    const prop = values[Math.floor(Math.random() * values.length)]
+console.log(prop);
     
-    }
-
+    })
+}
 
 getJoke();
 
 
 
 
-// const qouteID = Math.floor(Math.random()* joke.length)
-
-// for (joke in jokeObj) {
-//   console.log(`${joke}: ${jokeObj[1]}`)
-
-// joke = object.value = > whatve the joke is 
-
-
-
-
-// getJoke();
-
-
-//   //gets id #
 
 
 
