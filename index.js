@@ -20,29 +20,30 @@ function getJoke() {
 function renderJoke(JokeArr) {
   // console.log(JokeArr)
   let newJokeArray = JokeArr.map((jokeObject) => {
-    // console.log(jokeObject.joke)
+    // console.log(jokeObject.joke);
     return jokeObject.joke;
     // const values = Object.values(jokeObject)
 
     // console.log(prop);
   });
-  let randomJoke =
-    newJokeArray[Math.floor(Math.random() * newJokeArray.length)];
-  // console.log(randomJoke)
-  //create a new p element for the joke to live
-  let generatedJoke = document.createElement("p");
-  //create a new button element for the like button for each joke
-  let likeBtn = document.createElement("button");
-  //just an example here, added some innner text just to makie it look decent
-  likeBtn.innerHTML = "  Like";
-  generatedJoke.textContent = randomJoke;
-  // console.log(generatedJoke)
-  //append the new element to the parent div declared in DOM selectors
-  randomJokeDiv.appendChild(generatedJoke);
-  //appended the like button element to the joke
-  generatedJoke.appendChild(likeBtn);
-  //tried creating an even listener to render the jokes to the DOM. Stopped here.
-  jokeButton.addEventListener("click", () => renderJoke(JokeArr));
+  jokeButton.addEventListener("click", () => {
+    let randomJoke =
+      newJokeArray[Math.floor(Math.random() * newJokeArray.length)];
+    // console.log(randomJoke)
+    //create a new p element for the joke to live
+    let generatedJoke = document.createElement("p");
+    //create a new button element for the like button for each joke
+    let likeBtn = document.createElement("button");
+    //just an example here, added some innner text just to makie it look decent
+    likeBtn.innerHTML = "  Like";
+    generatedJoke.textContent = randomJoke;
+    // console.log(generatedJoke)
+    //append the new element to the parent div declared in DOM selectors
+    randomJokeDiv.appendChild(generatedJoke);
+    //appended the like button element to the joke
+    generatedJoke.appendChild(likeBtn);
+    //tried creating an even listener to render the jokes to the DOM. Stopped here.
+  });
 }
 
 getJoke();
