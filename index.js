@@ -42,7 +42,7 @@ function renderJoke(JokeArr) {
   //appended the like button element to the joke
   generatedJoke.appendChild(likeBtn);
   //tried creating an even listener to render the jokes to the DOM. Stopped here.
-  jokeButton.addEventListener("click", () => console.log(randomJoke));
+  jokeButton.addEventListener("click", () => renderJoke(JokeArr));
 }
 
 getJoke();
