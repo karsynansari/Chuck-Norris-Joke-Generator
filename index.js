@@ -3,6 +3,8 @@
 
 const randomJokeDiv = document.querySelector("#post-block");
 const jokeButton = document.querySelector("#chuck-btn");
+const jokeSubmitForm = document.querySelector("#add-joke");
+console.log(jokeSubmitForm);
 // console.log(randomJokeDiv)
 
 //moved these 2 variables into the global scope from their original place inside the joke button event listener.
@@ -48,9 +50,26 @@ function renderJoke(JokeArr) {
     //tried creating an even listener to render the jokes to the DOM. Stopped here.
   });
 }
+//Event Listeners
 //Event listener for like button. We can add more sophisticated functionality to it, but for now it's working!
 likeBtn.addEventListener("click", () => {
   likeBtn.textContent = "Liked!";
 });
+//event listener for joke submit form
+jokeSubmitForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+  console.log("i've been submitted");
+  //target the input of the form & then cain on .value to get the value of the input
+  addNewJoke(e.target["new-joke"].value);
+});
+
+//addNewJoke function to handle adding the new jokes to the dom
+function addNewJoke(userAddedJoke) {
+  // console.log(userAddedJoke);
+  let newUserJoke = document.createElement("p");
+  newUserJoke.textContent = userAddedJoke;
+  console.log(newUserJoke);
+  document.querySelector("#user-joke").appendChild(newUserJoke);
+}
 
 getJoke();
