@@ -70,6 +70,7 @@ function addNewJoke(userAddedJoke) {
   newUserJoke.textContent = userAddedJoke;
   // console.log(newUserJoke);
   document.querySelector("#user-joke").appendChild(newUserJoke);
+  newUserJoke.appendChild(likeBtn)
 }
 
 getJoke();
