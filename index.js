@@ -12,6 +12,8 @@ console.log(jokeSubmitForm);
 let generatedJoke = document.createElement("p");
 let likeBtn = document.createElement("button");
 let newUserJoke = document.createElement("p");
+newUserJoke.className = "joke-paragraph";
+console.log(newUserJoke);
 let likeBtn2 = document.createElement("button");
 likeBtn2.textContent = "Like";
 
@@ -45,6 +47,7 @@ function renderJoke(JokeArr) {
     //just an example here, added some innner text just to makie it look decent
     likeBtn.innerHTML = "  Like";
     generatedJoke.textContent = randomJoke;
+    generatedJoke.className = "joke-paragraph";
     // console.log(generatedJoke)
     //append the new element to the parent div declared in DOM selectors
     randomJokeDiv.appendChild(generatedJoke);
