@@ -67,10 +67,13 @@ jokeSubmitForm.addEventListener("submit", (e) => {
 function addNewJoke(userAddedJoke) {
   // console.log(userAddedJoke);
   let newUserJoke = document.createElement("p");
+  let likeBtn2 = document.createElement("button");
+  // console.log(likeBtn2)
   newUserJoke.textContent = userAddedJoke;
   // console.log(newUserJoke);
   document.querySelector("#user-joke").appendChild(newUserJoke);
-  newUserJoke.appendChild(likeBtn)
+  newUserJoke.appendChild(likeBtn2)
+  jokeSubmitForm.reset() 
 }
 
 getJoke();
