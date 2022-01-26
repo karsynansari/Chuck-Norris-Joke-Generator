@@ -1,0 +1,98 @@
+div#title-block {
+  position: absolute;
+  width: 1295px;
+  height: 134px;
+  left: 211px;
+  top: 83px;
+  background-color: darkslategray;
+  text-align: center;
+  font-family: arial;
+  color: white;
+}
+
+div#feature-block {
+  position: absolute;
+  width: 460px;
+  height: 268px;
+  left: 211px;
+  top: 278px;
+}
+
+div#submit-block {
+  position: absolute;
+  width: 780px;
+  height: 268px;
+  left: 726px;
+  top: 278px;
+}
+
+div#post-block {
+  position: absolute;
+  width: 1295px;
+  height: 200px;
+  left: 211px;
+  top: 620px;
+}
+
+div.div-container {
+  background-color: cadetblue;
+  text-align: center;
+  /* line-height: 1.5; */
+}
+
+button#chuck-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* button#submit-btn{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} */
+button#add-joke-btn {
+  border: solid 1px green;
+  height: 22px;
+  line-height: 22px;
+  vertical-align: middle;
+}
+
+form#add-joke {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: Arial;
+  font-weight: 600;
+  font-size: 30px;
+  color: #2f4f4f;
+}
+
+input#new-joke {
+  width: 350px;
+  height: 30px;
+  border: 1px solid #999999;
+  padding: 5px;
+}
+
+input#submit-button {
+  display: block;
+  text-align: center;
+  margin: 12px auto;
+  border: 1px auto;
+  padding: 16px 24px;
+  border-radius: 30px;
+  border: 1px solid #322b4e;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  background: #ddeee9;
+  color: #2f4f4f;
+  box-shadow: 5px 2px 2px rgba(0, 0, 0, 0.3);
+}
+.joke-paragraph {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+}
