@@ -36,8 +36,8 @@ function renderJoke(JokeArr) {
   jokeButton.addEventListener("click", () => {
     let randomJoke =
       newJokeArray[Math.floor(Math.random() * newJokeArray.length)];
-    // console.log(randomJoke)
-    //create a new p element for the joke to live
+    console.log(randomJoke)
+    //create a new p element for the joke to live ****
 
     //just an example here, added some innner text just to makie it look decent
     likeBtn.innerHTML = "  Like";
