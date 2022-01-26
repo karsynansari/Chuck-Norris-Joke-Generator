@@ -1,0 +1,31 @@
+div#title-block{
+    position: absolute;
+    width: 1295px;
+    height: 134px;
+    left: 211px;
+    top: 83px;
+    color:blueviolet
+}
+div#feature-block{
+    position: absolute;
+    width: 460px;
+    height: 268px;
+    left: 211px;
+    top: 278px;
+}
+
+div#submit-block {
+    position: absolute;
+    width: 780px;
+    height: 268px;
+    left: 726px;
+    top: 278px;
+}
+
+div#post-block{
+    position: absolute;
+    width: 1295px;
+    height: 390px;
+    left: 211px;
+    top: 620px;
+}
