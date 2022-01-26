@@ -11,7 +11,14 @@ console.log(jokeSubmitForm);
 //this made a new joke appear every time btn is clicked, instead of them all listing out, which is optimal imo.
 let generatedJoke = document.createElement("p");
 let likeBtn = document.createElement("button");
+
 likeBtn.className = 'likebtn'
+
+let newUserJoke = document.createElement("p");
+newUserJoke.className = "joke-paragraph";
+console.log(newUserJoke);
+let likeBtn2 = document.createElement("button");
+likeBtn2.textContent = "Like";
 
 const JSON_URL = "http://localhost:3000/value";
 
@@ -31,12 +38,17 @@ function renderJoke(JokeArr) {
   jokeButton.addEventListener("click", () => {
     let randomJoke =
       newJokeArray[Math.floor(Math.random() * newJokeArray.length)];
-    console.log(randomJoke)
+    console.log(randomJoke);
     //create a new p element for the joke to live ****
 
     //just an example here, added some innner text just to makie it look decent
     likeBtn.innerHTML = "  like";
     generatedJoke.textContent = randomJoke;
+
+
+    generatedJoke.className = "joke-paragraph";
+    // console.log(generatedJoke)
+
     //append the new element to the parent div declared in DOM selectors
     randomJokeDiv.appendChild(generatedJoke);
     //appended the like button element to the joke
@@ -54,6 +66,12 @@ likeBtn.addEventListener("click", () => {
   likeBtn.textContent = "Liked!";
 });
 
+
+
+likeBtn2.addEventListener("click", () => {
+  likeBtn2.textContent = "Liked!";
+});
+
 //event listener for joke submit form
 jokeSubmitForm.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -65,13 +83,18 @@ jokeSubmitForm.addEventListener("submit", (e) => {
 //addNewJoke function to handle adding the new jokes to the dom
 function addNewJoke(userAddedJoke) {
   // console.log(userAddedJoke);
+
   let newUserJoke = document.createElement("p");
   let likeBtn2 = document.createElement("button");
   likeBtn2.className = 'likebtn'
+
+
+  // console.log(likeBtn2)
+
   newUserJoke.textContent = userAddedJoke;
   document.querySelector("#user-joke").appendChild(newUserJoke);
-  newUserJoke.appendChild(likeBtn2)
-  jokeSubmitForm.reset() 
+  newUserJoke.appendChild(likeBtn2);
+  jokeSubmitForm.reset();
 }
 
 getJoke();
