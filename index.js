@@ -28,7 +28,6 @@ function renderJoke(JokeArr) {
     // const values = Object.values(jokeObject)
   });
 
-
   jokeButton.addEventListener("click", () => {
     let randomJoke =
       newJokeArray[Math.floor(Math.random() * newJokeArray.length)];
@@ -36,7 +35,7 @@ function renderJoke(JokeArr) {
     //create a new p element for the joke to live ****
 
     //just an example here, added some innner text just to makie it look decent
-    likeBtn.innerHTML = "  Like";
+    likeBtn.innerHTML = "  like";
     generatedJoke.textContent = randomJoke;
     //append the new element to the parent div declared in DOM selectors
     randomJokeDiv.appendChild(generatedJoke);

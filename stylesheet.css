@@ -1,6 +1,7 @@
 div#body-div{
     resize: both;
     overflow: auto;
+    align-self: center;
 }
 
 div#title-block{
@@ -48,6 +49,7 @@ button#chuck-btn{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+  
 }
 
 button#submit-btn{
@@ -67,4 +69,8 @@ form#add-joke{
 button.likebtn{
     font-size: medium;
     
+}
+img#btnimg{
+    width: 400px;
+    height: 250px;
 }
