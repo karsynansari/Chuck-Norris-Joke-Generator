@@ -58,7 +58,7 @@ likeBtn.addEventListener("click", () => {
 //event listener for joke submit form
 jokeSubmitForm.addEventListener("submit", (e) => {
   e.preventDefault();
-  console.log("i've been submitted");
+  // console.log("i've been submitted");
   //target the input of the form & then cain on .value to get the value of the input
   addNewJoke(e.target["new-joke"].value);
 });
@@ -68,7 +68,7 @@ function addNewJoke(userAddedJoke) {
   // console.log(userAddedJoke);
   let newUserJoke = document.createElement("p");
   newUserJoke.textContent = userAddedJoke;
-  console.log(newUserJoke);
+  // console.log(newUserJoke);
   document.querySelector("#user-joke").appendChild(newUserJoke);
 }
 
