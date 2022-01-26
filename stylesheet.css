@@ -1,3 +1,6 @@
+
+
+
 div#body-div{
     resize: both;
     overflow: auto;
@@ -49,7 +52,6 @@ button#chuck-btn{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-  
 }
 
 button#submit-btn{
@@ -73,4 +75,9 @@ button.likebtn{
 img#btnimg{
     width: 400px;
     height: 250px;
+    
+}
+
+img#background-img{
+    object-fit: fill;
 }
