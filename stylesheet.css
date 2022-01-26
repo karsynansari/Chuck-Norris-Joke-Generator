@@ -1,3 +1,8 @@
+div#body-div{
+    resize: both;
+    overflow: auto;
+}
+
 div#title-block{
     position: absolute;
     width: 1295px;
@@ -57,4 +62,9 @@ form#add-joke{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+button.likebtn{
+    font-size: medium;
+    
 }
