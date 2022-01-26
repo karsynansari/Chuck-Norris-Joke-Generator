@@ -4,8 +4,10 @@ div#title-block{
     height: 134px;
     left: 211px;
     top: 83px;
-    color:blueviolet
+    background-color: darkslategray;
+    text-align: center;
 }
+
 div#feature-block{
     position: absolute;
     width: 460px;
@@ -28,4 +30,31 @@ div#post-block{
     height: 390px;
     left: 211px;
     top: 620px;
+}
+
+div.div-container{
+    background-color: cadetblue;
+    text-align: center;
+    /* line-height: 1.5; */
+}
+
+button#chuck-btn{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+button#submit-btn{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+form#add-joke{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
