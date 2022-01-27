@@ -51,14 +51,15 @@ div#title-block{
     height: 134px;
     left: 211px;
     top: 83px;
-    background-color: darkslategray;
     text-align: center;
+    background-color: #12100f
+    
 }
 
 div#feature-block{
     position: absolute;
-    width: 360px;
-    height: 268px;
+    width: 250px;
+    height: 240px;
     left: 247px;
     top: 278px;
     /* opacity: 0 */}
@@ -77,12 +78,12 @@ div#title-block {
 
 div#feature-block {
   position: absolute;
-  width: 460px;
+  width: 260px;
   height: 268px;
-  left: 211px;
+  left: 291px;
   top: 278px;
-
 }
+
 
 div#submit-block {
   position: absolute;
@@ -101,8 +102,10 @@ div#post-block {
 }
 
 div.div-container {
-  background-color: cadetblue;
   text-align: center;
+  /* background-color: #12100f */
+  background-color: lightgray;
+  opacity: .89;
   /* line-height: 1.5; */
 }
 
@@ -112,9 +115,7 @@ button#chuck-btn{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    border: 2px solid black
-
-    border-radius: 8px;
+    border: 2px 4mm ridge black;
     border-width: 1em;
 }
 /* button#chuck-btn {
@@ -175,11 +176,15 @@ p{
 }
 
 input#new-joke {
-  width: 350px;
-  height: 30px;
-  border: 1px solid #999999;
+  width: 550px;
+  height: 50px;
+  border: 5px solid;
   padding: 5px;
+  border: #2e2521;
+  font-size: 40px;
+  text-align: center;
 }
+
 
 input#submit-button {
   display: block;
@@ -201,18 +206,36 @@ form#add-joke {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-family: Arial;
+  font-family: monospace;
   font-weight: 600;
-  font-size: 30px;
-  color: #2F4F4F;
+  font-size: 50px;
+  color: black;
+  
 }
 
 .joke-paragraph {
   font-family: monospace;
-  font-size: 40px;
+  font-size: 30px;
   color: black
 }
 
 .like-buttons {
   font-size: 20px;
+}
+
+h1{
+  padding: 14px;
+  text-align: center;
+  margin: auto;
+  font-family: impact;
+  letter-spacing: 5px;
+  font-size: 50px;
+  /* letter-spacing; .2rem; */
+}
+
+h2{
+  text-align: center;
+  margin: auto;
+  font-family: impact;
+  letter-spacing: .2rem;
 }
