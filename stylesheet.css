@@ -72,7 +72,7 @@ div#title-block {
   top: 83px;
   background-color: #331e1c;
   text-align: center;
-  font-family: impact;
+  font-family: Century, serif;
   opacity: .95;
   color: white;
 }
@@ -122,40 +122,6 @@ button#chuck-btn{
 }
 
 
-
-button#submit-button{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border: 2px 4mm ridge black;
-  border-width: 1em;
-  height: 305px;
-}
-
-
-/* button#add-joke-btn {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border: 2px 4mm ridge black;
-  border-width: 1em;
-  height: 305px;
-} */
-
-
-
-/* form#add-joke {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-
-} */
-
-
-
 button.likebtn{
     font-size: medium;
     
@@ -195,14 +161,16 @@ input#submit-button {
   text-align: center;
   margin: 12px auto;
   border: 1px auto;
-  padding: 16px 24px;
-  border-radius: 30px;
-  border: 1px solid #322b4e;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 16px;
-  background: #ddeee9;
-  color: #2f4f4f;
-  box-shadow: 5px 2px 2px rgba(0, 0, 0, 0.3);
+  padding: 7px 14px;
+  
+  
+  font-family: monospace;
+  font-size: 24px;
+  font-weight: bold;
+  border-width: .5em;
+  border: 2px 4mm ridge black;
+  background: #c9bbbb
+  
 }
 
 form#add-joke {
