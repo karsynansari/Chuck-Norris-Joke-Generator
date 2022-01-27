@@ -67,10 +67,12 @@ jokeSubmitForm.addEventListener("submit", (e) => {
 function addNewJoke(userAddedJoke) {
   // console.log(userAddedJoke);
   // console.log(likeBtn2)
-  newUserJoke.textContent = userAddedJoke;
-  // console.log(newUserJoke);
-  document.querySelector("#user-joke").appendChild(newUserJoke);
-  newUserJoke.appendChild(likeBtn2);
-  jokeSubmitForm.reset();
+  if (userAddedJoke !== "") {
+    newUserJoke.textContent = userAddedJoke;
+    // console.log(newUserJoke);
+    document.querySelector("#user-joke").appendChild(newUserJoke);
+    newUserJoke.appendChild(likeBtn2);
+    jokeSubmitForm.reset();
+  }
 }
 getJoke();
