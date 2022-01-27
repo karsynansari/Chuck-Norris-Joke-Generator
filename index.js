@@ -1,7 +1,7 @@
 // console.log("hello");
 //working
 //DOM Selectors
-const randomJokeDiv = document.querySelector("#post-block"); 
+const randomJokeDiv = document.querySelector("#post-block");
 const jokeButton = document.querySelector("#chuck-btn");
 const jokeSubmitForm = document.querySelector("#add-joke");
 console.log(jokeSubmitForm);
@@ -10,10 +10,12 @@ console.log(jokeSubmitForm);
 //this made a new joke appear every time btn is clicked, instead of them all listing out, which is optimal imo.
 let generatedJoke = document.createElement("p");
 let likeBtn = document.createElement("button");
+likeBtn.className = "like-buttons";
 let newUserJoke = document.createElement("p");
 newUserJoke.className = "joke-paragraph";
 console.log(newUserJoke);
 let likeBtn2 = document.createElement("button");
+likeBtn2.className = "like-buttons";
 likeBtn2.textContent = "Like";
 const JSON_URL = "http://localhost:3000/value";
 //   const postEl = document.createElement('p')
