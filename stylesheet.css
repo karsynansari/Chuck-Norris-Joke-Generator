@@ -91,18 +91,22 @@ div#feature-block {
 
 div#submit-block {
   position: absolute;
-  width: 840px;
-  height: 300px;
+  width: 810px;
+  height: 274px;
   left: 666px;
-  top: 283px;
+  top: 280px;
+  border: solid #331e1c;
+  border-width: 16px;
 }
 
 div#post-block {
   position: absolute;
-  width: 1295px;
+  width: 1267px;
   height: 400px;
   left: 211px;
   top: 620px;
+  border: solid #331e1c;
+  border-width: 16px;
 }
 
 div.div-container {
@@ -204,14 +208,16 @@ h1{
   margin: auto;
   font-family: 'Courier New', Courier, monospace;
   letter-spacing: 5px;
-  font-size: 50px;
+  font-size: 58px;
+  font-weight: 900;
   /* letter-spacing; .2rem; */
 }
 
 h2{
-  font-size: 30px;
+  font-size: 39px;
   text-align: center;
   margin: auto;
   font-family: 'Courier New', Courier, monospace;
-  letter-spacing: .2rem;
+  letter-spacing: .02rem;
+  font-weight: 900;
 }
