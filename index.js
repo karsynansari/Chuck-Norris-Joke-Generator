@@ -64,4 +64,6 @@ function addNewJoke(userAddedJoke) {
     jokeSubmitForm.reset();
   }
 }
+
+
 getJoke();

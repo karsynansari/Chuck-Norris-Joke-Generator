@@ -1,4 +1,7 @@
-
+/* @font-face {
+  font-family: ;
+  src: url();
+} */
 * {
     margin: 0px;
     padding: 0px;
@@ -72,7 +75,7 @@ div#title-block {
   top: 83px;
   background-color: #331e1c;
   text-align: center;
-  font-family: Century, serif;
+  font-family: 'Press Start 2P', cursive;
   opacity: .95;
   color: white;
 }
