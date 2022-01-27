@@ -4,20 +4,16 @@ const randomJokeDiv = document.querySelector("#post-block");
 const jokeButton = document.querySelector("#chuck-btn");
 const jokeSubmitForm = document.querySelector("#add-joke");
 const inputSubmitBtn = document.querySelector("#submit-button");
-console.log(inputSubmitBtn);
+
 let generatedJoke = document.createElement("p");
 let likeBtn = document.createElement("button");
 likeBtn.className = "like-buttons";
 let newUserJoke = document.createElement("p");
 newUserJoke.className = "joke-paragraph";
-console.log(newUserJoke);
+
 let likeBtn2 = document.createElement("button");
 likeBtn2.className = "like-buttons";
 likeBtn2.textContent = "Like";
-
-document.addEventListener("DOMContentLoaded", () => {
-  console.log("after DOM loaded");
-});
 
 //Fetch function
 function getJoke() {
@@ -34,7 +30,6 @@ function renderJoke(JokeArr) {
   jokeButton.addEventListener("click", () => {
     let randomJoke =
       newJokeArray[Math.floor(Math.random() * newJokeArray.length)];
-    console.log(randomJoke);
 
     likeBtn.innerHTML = "  Like";
     generatedJoke.textContent = randomJoke;
@@ -82,6 +77,5 @@ function addNewJoke(userAddedJoke) {
     jokeSubmitForm.reset();
   }
 }
-
 
 getJoke();
