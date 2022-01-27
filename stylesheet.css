@@ -75,7 +75,7 @@ div#title-block {
   top: 83px;
   background-color: #331e1c;
   text-align: center;
-  font-family: 'Press Start 2P', cursive;
+  font-family: 'Copperplate';
   opacity: .95;
   color: white;
 }
@@ -199,18 +199,19 @@ form#add-joke {
 }
 
 h1{
-  padding: 14px;
+  padding: 18px;
   text-align: center;
   margin: auto;
-  font-family: impact;
+  font-family: 'Courier New', Courier, monospace;
   letter-spacing: 5px;
   font-size: 50px;
   /* letter-spacing; .2rem; */
 }
 
 h2{
+  font-size: 30px;
   text-align: center;
   margin: auto;
-  font-family: impact;
+  font-family: 'Courier New', Courier, monospace;
   letter-spacing: .2rem;
 }
