@@ -3,49 +3,44 @@
   src: url();
 } */
 * {
-    margin: 0px;
-    padding: 0px;
+  margin: 0px;
+  padding: 0px;
 }
 
-body{
-    /* Frame 1 */
-    
-    /* Auto layout */
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    
-    position: absolute;
-    width: 1836px;
-    height: 1210px;
-    left: -53px;
-    top: -59px;
-    
-    /* fire-photo 1 */
-    position: absolute;
-    width: 100vh;
-    height: 100vh;
-    /* left: 10px;
+body {
+  /* Frame 1 */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  position: absolute;
+  width: 1836px;
+  height: 1210px;
+  left: -53px;
+  top: -59px;
+
+  /* fire-photo 1 */
+  position: absolute;
+  width: 100vh;
+  height: 100vh;
+  /* left: 10px;
     top: 10px; */
-    
-    background-image: url(images/chuck-imgs/fire-photo.png);
-    background-size: cover;
-    background-repeat: repeat;
 
-    
-    
-    /* Inside auto layout */
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    
+  background-image: url(images/chuck-imgs/fire-photo.png);
+  background-size: cover;
+  background-repeat: repeat;
 
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 
-    resize: both;
-    overflow: auto;
-    align-self: center;
-    position: relative;
-
+  resize: both;
+  overflow: auto;
+  align-self: center;
+  position: relative;
 }
 
 /* div#title-block{
@@ -59,13 +54,14 @@ body{
     
 } */
 
-div#feature-block{
-    position: absolute;
-    width: 250px;
-    height: 240px;
-    left: 247px;
-    top: 278px;
-    /* opacity: 0 */}
+div#feature-block {
+  position: absolute;
+  width: 250px;
+  height: 240px;
+  left: 247px;
+  top: 278px;
+  /* opacity: 0 */
+}
 
 div#title-block {
   position: absolute;
@@ -75,8 +71,8 @@ div#title-block {
   top: 83px;
   background-color: #331e1c;
   text-align: center;
-  font-family: 'Press Start 2P', cursive;
-  opacity: .95;
+  font-family: "Press Start 2P", cursive;
+  opacity: 0.95;
   color: white;
 }
 
@@ -87,7 +83,6 @@ div#feature-block {
   left: 291px;
   top: 298px;
 }
-
 
 div#submit-block {
   position: absolute;
@@ -109,39 +104,35 @@ div.div-container {
   text-align: center;
   /* background-color: #12100f */
   background-color: lightgray;
-  opacity: .89;
+  opacity: 0.89;
   /* line-height: 1.5; */
 }
 
-
-button#chuck-btn{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border: 2px 4mm ridge black;
-    border-width: 1em;
-    height: 305px;
+button#chuck-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px 4mm ridge black;
+  border-width: 1em;
+  height: 305px;
 }
 
-
-button.likebtn{
-    font-size: medium;
-    
+button.likebtn {
+  font-size: medium;
 }
-img#btnimg{
-    width: 400px;
-    height: 250px;
-
+img#btnimg {
+  width: 400px;
+  height: 250px;
 }
 
-img#background-img{
-    object-fit: fill;
-    width: auto;
-    height: auto;
+img#background-img {
+  object-fit: fill;
+  width: auto;
+  height: auto;
 }
 
-p{
+p {
   font-family: Arial;
   font-weight: 600;
   font-size: 30px;
@@ -158,22 +149,19 @@ input#new-joke {
   text-align: center;
 }
 
-
 input#submit-button {
   display: block;
   text-align: center;
   margin: 12px auto;
   border: 1px auto;
   padding: 7px 14px;
-  
-  
+
   font-family: monospace;
   font-size: 24px;
   font-weight: bold;
-  border-width: .5em;
+  border-width: 0.5em;
   border: 2px 4mm ridge black;
-  background: #c9bbbb
-  
+  background: #c9bbbb;
 }
 
 form#add-joke {
@@ -185,20 +173,19 @@ form#add-joke {
   font-weight: 600;
   font-size: 50px;
   color: black;
-  
 }
 
 .joke-paragraph {
   font-family: monospace;
   font-size: 30px;
-  color: black
+  color: black;
 }
 
 .like-buttons {
   font-size: 20px;
 }
 
-h1{
+h1 {
   padding: 14px;
   text-align: center;
   margin: auto;
@@ -208,9 +195,9 @@ h1{
   /* letter-spacing; .2rem; */
 }
 
-h2{
+h2 {
   text-align: center;
   margin: auto;
   font-family: impact;
-  letter-spacing: .2rem;
+  letter-spacing: 0.2rem;
 }

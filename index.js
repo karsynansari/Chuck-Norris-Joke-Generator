@@ -8,12 +8,6 @@ const inputSubmitBtn = document.querySelector("#submit-button");
 let generatedJoke = document.createElement("p");
 let likeBtn = document.createElement("button");
 likeBtn.className = "like-buttons";
-let newUserJoke = document.createElement("p");
-newUserJoke.className = "joke-paragraph";
-
-let likeBtn2 = document.createElement("button");
-likeBtn2.className = "like-buttons";
-likeBtn2.textContent = "Like";
 
 //Fetch function
 function getJoke() {
@@ -43,12 +37,13 @@ function renderJoke(JokeArr) {
 //Event Listeners
 //Event listener for like button. We can add more sophisticated functionality to it, but for now it's working!
 likeBtn.addEventListener("click", () => {
-  likeBtn.textContent = " 🔥Liked!";
+  if (likeBtn.textContent === " 🔥Liked!") {
+    likeBtn.textContent = "Like";
+  } else {
+    likeBtn.textContent = " 🔥Liked!";
+  }
 });
 //Event listener for liking user-added jokes
-likeBtn2.addEventListener("click", () => {
-  likeBtn2.textContent = "🔥Liked!";
-});
 
 inputSubmitBtn.addEventListener(
   "mouseover",
@@ -70,8 +65,20 @@ jokeSubmitForm.addEventListener("submit", (e) => {
 //addNewJoke function to handle adding the new jokes to the dom when button is clicked
 function addNewJoke(userAddedJoke) {
   if (userAddedJoke !== "") {
+    let likeBtn2 = document.createElement("button");
+    likeBtn2.className = "like-buttons";
+    likeBtn2.textContent = "Like";
+    let newUserJoke = document.createElement("p");
+    newUserJoke.className = "joke-paragraph";
     newUserJoke.textContent = userAddedJoke;
 
+    likeBtn2.addEventListener("click", () => {
+      if (likeBtn2.textContent === " 🔥Liked!") {
+        likeBtn2.textContent = "Like";
+      } else {
+        likeBtn2.textContent = " 🔥Liked!";
+      }
+    });
     document.querySelector("#user-joke").appendChild(newUserJoke);
     newUserJoke.appendChild(likeBtn2);
     jokeSubmitForm.reset();
