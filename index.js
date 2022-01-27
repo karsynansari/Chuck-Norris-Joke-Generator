@@ -1,8 +1,10 @@
 //DOM Selectors & other global variables
+const JSON_URL = "http://localhost:3000/value";
 const randomJokeDiv = document.querySelector("#post-block");
 const jokeButton = document.querySelector("#chuck-btn");
 const jokeSubmitForm = document.querySelector("#add-joke");
-console.log(jokeSubmitForm);
+const inputSubmitBtn = document.querySelector("#submit-button");
+console.log(inputSubmitBtn);
 let generatedJoke = document.createElement("p");
 let likeBtn = document.createElement("button");
 likeBtn.className = "like-buttons";
@@ -12,7 +14,11 @@ console.log(newUserJoke);
 let likeBtn2 = document.createElement("button");
 likeBtn2.className = "like-buttons";
 likeBtn2.textContent = "Like";
-const JSON_URL = "http://localhost:3000/value";
+
+document.addEventListener("DOMContentLoaded", () => {
+  console.log("after DOM loaded");
+});
+
 //Fetch function
 function getJoke() {
   fetch(JSON_URL)
@@ -48,6 +54,18 @@ likeBtn.addEventListener("click", () => {
 likeBtn2.addEventListener("click", () => {
   likeBtn2.textContent = "🔥Liked!";
 });
+
+inputSubmitBtn.addEventListener(
+  "mouseover",
+  (event) => {
+    inputSubmitBtn.style.background = "#FFFFFF";
+    setTimeout(function () {
+      event.target.style.background = "";
+    }, 500);
+  },
+  false
+);
+
 //event listener for joke submit form
 jokeSubmitForm.addEventListener("submit", (e) => {
   e.preventDefault();
