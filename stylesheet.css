@@ -1,7 +1,7 @@
-/* @font-face {
+@font-face {
   font-family: ;
-  src: url();
-} */
+  src: url(Press_Start_2P/PressStart2P-Regular.ttf);
+}
 * {
   margin: 0px;
   padding: 0px;
@@ -82,6 +82,9 @@ div#feature-block {
   height: 268px;
   left: 291px;
   top: 298px;
+  opacity: 1;
+  color: white
+  
 }
 
 div#submit-block {
@@ -211,21 +214,27 @@ h1{
   padding: 18px;
   text-align: center;
   margin: auto;
-  font-family: 'Courier New', Courier, monospace;
-  letter-spacing: 5px;
-  font-size: 58px;
+  margin-top: 15px;
+  /* font-family: 'Courier New', Courier, monospace; */
+  font-family: 'Press Start 2P', cursive;
+  letter-spacing: 4px;
+  font-size: 40px;
   font-weight: 900;
+  color:lightgray;
   /* letter-spacing; .2rem; */
 }
 
 
 h2{
-  font-size: 39px;
+  font-size: 26px;
   text-align: center;
   margin: auto;
-  font-family: 'Courier New', Courier, monospace;
+  margin-top: 20px;
+  /* font-family: 'Courier New', Courier, monospace; */
+  font-family: 'Press Start 2P', cursive;
   letter-spacing: .02rem;
   font-weight: 900;
+  color:lightgray;
 }
 
 
