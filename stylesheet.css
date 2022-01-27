@@ -1,4 +1,7 @@
-
+/* @font-face {
+  font-family: ;
+  src: url();
+} */
 * {
     margin: 0px;
     padding: 0px;
@@ -45,20 +48,21 @@ body{
 
 }
 
-div#title-block{
+/* div#title-block{
     position: absolute;
     width: 1295px;
     height: 134px;
     left: 211px;
     top: 83px;
-    background-color: darkslategray;
     text-align: center;
-}
+    background-color: #331e1c
+    
+} */
 
 div#feature-block{
     position: absolute;
-    width: 360px;
-    height: 268px;
+    width: 250px;
+    height: 240px;
     left: 247px;
     top: 278px;
     /* opacity: 0 */}
@@ -66,43 +70,46 @@ div#feature-block{
 div#title-block {
   position: absolute;
   width: 1295px;
-  height: 134px;
+  height: 180px;
   left: 211px;
   top: 83px;
-  background-color: darkslategray;
+  background-color: #331e1c;
   text-align: center;
-  font-family: arial;
+  font-family: 'Press Start 2P', cursive;
+  opacity: .95;
   color: white;
 }
 
 div#feature-block {
   position: absolute;
-  width: 460px;
+  width: 260px;
   height: 268px;
-  left: 211px;
-  top: 278px;
-
+  left: 291px;
+  top: 298px;
 }
+
 
 div#submit-block {
   position: absolute;
-  width: 780px;
-  height: 268px;
-  left: 726px;
-  top: 278px;
+  width: 840px;
+  height: 300px;
+  left: 666px;
+  top: 283px;
 }
 
 div#post-block {
   position: absolute;
   width: 1295px;
-  height: 200px;
+  height: 400px;
   left: 211px;
   top: 620px;
 }
 
 div.div-container {
-  background-color: cadetblue;
   text-align: center;
+  /* background-color: #12100f */
+  background-color: lightgray;
+  opacity: .89;
   /* line-height: 1.5; */
 }
 
@@ -112,43 +119,10 @@ button#chuck-btn{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    border: 2px solid black
-
-    border-radius: 8px;
+    border: 2px 4mm ridge black;
     border-width: 1em;
+    height: 305px;
 }
-/* button#chuck-btn {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-
-} */
-
-button#submit-btn{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: black;
-} 
-
-button#add-joke-btn {
-  border: solid 1px green;
-  height: 22px;
-  line-height: 22px;
-  vertical-align: middle;
-
-}
-
-/* form#add-joke {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-
-} */
-
 
 
 button.likebtn{
@@ -175,25 +149,31 @@ p{
 }
 
 input#new-joke {
-  width: 350px;
-  height: 30px;
-  border: 1px solid #999999;
+  width: 550px;
+  height: 50px;
+  border: 5px solid;
   padding: 5px;
+  border: #2e2521;
+  font-size: 40px;
+  text-align: center;
 }
+
 
 input#submit-button {
   display: block;
   text-align: center;
   margin: 12px auto;
   border: 1px auto;
-  padding: 16px 24px;
-  border-radius: 30px;
-  border: 1px solid #322b4e;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 16px;
-  background: #ddeee9;
-  color: #2f4f4f;
-  box-shadow: 5px 2px 2px rgba(0, 0, 0, 0.3);
+  padding: 7px 14px;
+  
+  
+  font-family: monospace;
+  font-size: 24px;
+  font-weight: bold;
+  border-width: .5em;
+  border: 2px 4mm ridge black;
+  background: #c9bbbb
+  
 }
 
 form#add-joke {
@@ -201,18 +181,36 @@ form#add-joke {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-family: Arial;
+  font-family: monospace;
   font-weight: 600;
-  font-size: 30px;
-  color: #2F4F4F;
+  font-size: 50px;
+  color: black;
+  
 }
 
 .joke-paragraph {
   font-family: monospace;
-  font-size: 40px;
+  font-size: 30px;
   color: black
 }
 
 .like-buttons {
   font-size: 20px;
+}
+
+h1{
+  padding: 14px;
+  text-align: center;
+  margin: auto;
+  font-family: impact;
+  letter-spacing: 5px;
+  font-size: 50px;
+  /* letter-spacing; .2rem; */
+}
+
+h2{
+  text-align: center;
+  margin: auto;
+  font-family: impact;
+  letter-spacing: .2rem;
 }
