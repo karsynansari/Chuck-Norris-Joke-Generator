@@ -71,8 +71,6 @@ div#title-block {
   top: 83px;
   background-color: #331e1c;
   text-align: center;
-  font-family: "Press Start 2P", cursive;
-  opacity: 0.95;
   color: white;
 }
 
@@ -86,18 +84,22 @@ div#feature-block {
 
 div#submit-block {
   position: absolute;
-  width: 840px;
-  height: 300px;
+  width: 810px;
+  height: 274px;
   left: 666px;
-  top: 283px;
+  top: 280px;
+  border: solid #331e1c;
+  border-width: 16px;
 }
 
 div#post-block {
   position: absolute;
-  width: 1295px;
+  width: 1267px;
   height: 400px;
   left: 211px;
   top: 620px;
+  border: solid #331e1c;
+  border-width: 16px;
 }
 
 div.div-container {
@@ -185,19 +187,26 @@ form#add-joke {
   font-size: 20px;
 }
 
-h1 {
-  padding: 14px;
+
+h1{
+  padding: 18px;
   text-align: center;
   margin: auto;
-  font-family: impact;
+  font-family: 'Courier New', Courier, monospace;
   letter-spacing: 5px;
-  font-size: 50px;
+  font-size: 58px;
+  font-weight: 900;
   /* letter-spacing; .2rem; */
 }
 
-h2 {
+
+h2{
+  font-size: 39px;
   text-align: center;
   margin: auto;
-  font-family: impact;
-  letter-spacing: 0.2rem;
+  font-family: 'Courier New', Courier, monospace;
+  letter-spacing: .02rem;
+  font-weight: 900;
 }
+
+
