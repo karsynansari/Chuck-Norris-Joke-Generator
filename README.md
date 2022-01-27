@@ -29,3 +29,9 @@ Wednesday:
   -Try to tackle as much styling as we can today
       -Make buttons look nicer
       -Add photo
+
+
+Thursday to-do
+
+-fix the text in the title block
+-change the 'add joke' button

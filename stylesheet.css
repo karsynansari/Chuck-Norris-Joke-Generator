@@ -45,16 +45,16 @@ body{
 
 }
 
-div#title-block{
+/* div#title-block{
     position: absolute;
     width: 1295px;
     height: 134px;
     left: 211px;
     top: 83px;
     text-align: center;
-    background-color: #12100f
+    background-color: #331e1c
     
-}
+} */
 
 div#feature-block{
     position: absolute;
@@ -67,12 +67,13 @@ div#feature-block{
 div#title-block {
   position: absolute;
   width: 1295px;
-  height: 134px;
+  height: 180px;
   left: 211px;
   top: 83px;
-  background-color: darkslategray;
+  background-color: #331e1c;
   text-align: center;
-  font-family: arial;
+  font-family: impact;
+  opacity: .95;
   color: white;
 }
 
@@ -81,22 +82,22 @@ div#feature-block {
   width: 260px;
   height: 268px;
   left: 291px;
-  top: 278px;
+  top: 298px;
 }
 
 
 div#submit-block {
   position: absolute;
-  width: 780px;
-  height: 268px;
-  left: 726px;
-  top: 278px;
+  width: 840px;
+  height: 300px;
+  left: 666px;
+  top: 283px;
 }
 
 div#post-block {
   position: absolute;
   width: 1295px;
-  height: 200px;
+  height: 400px;
   left: 211px;
   top: 620px;
 }
@@ -117,30 +118,33 @@ button#chuck-btn{
     transform: translate(-50%, -50%);
     border: 2px 4mm ridge black;
     border-width: 1em;
+    height: 305px;
 }
-/* button#chuck-btn {
+
+
+
+button#submit-button{
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  border: 2px 4mm ridge black;
+  border-width: 1em;
+  height: 305px;
+}
 
+
+/* button#add-joke-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px 4mm ridge black;
+  border-width: 1em;
+  height: 305px;
 } */
 
-button#submit-btn{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: black;
-} 
 
-button#add-joke-btn {
-  border: solid 1px green;
-  height: 22px;
-  line-height: 22px;
-  vertical-align: middle;
-
-}
 
 /* form#add-joke {
   position: absolute;
