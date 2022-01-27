@@ -51,10 +51,10 @@ function renderJoke(JokeArr) {
 //Event Listeners
 //Event listener for like button. We can add more sophisticated functionality to it, but for now it's working!
 likeBtn.addEventListener("click", () => {
-  likeBtn.textContent = "Liked!";
+  likeBtn.textContent = " 🔥Liked!";
 });
 likeBtn2.addEventListener("click", () => {
-  likeBtn2.textContent = "Liked!";
+  likeBtn2.textContent = "🔥Liked!";
 });
 //event listener for joke submit form
 jokeSubmitForm.addEventListener("submit", (e) => {
