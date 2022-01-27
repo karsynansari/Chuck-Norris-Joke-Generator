@@ -1,6 +1,7 @@
 // console.log("hello");
+//working
 //DOM Selectors
-const randomJokeDiv = document.querySelector("#post-block");
+const randomJokeDiv = document.querySelector("#post-block"); 
 const jokeButton = document.querySelector("#chuck-btn");
 const jokeSubmitForm = document.querySelector("#add-joke");
 console.log(jokeSubmitForm);
