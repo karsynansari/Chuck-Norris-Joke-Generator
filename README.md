@@ -1,10 +1,10 @@
-#H1 Chuck Norris Joke Generator 
+# Chuck Norris Joke Generator 
 
-#H2 Data
+## Data
 
 http://www.icndb.com/api/
 
-#H2 
+## About 
 
 This generator will bring laughs, shock and action into your life. //In true// form the generator allows the user to post their own joke but gather inspriation from the Chuck Norris Approved joke simulator. 
 
@@ -13,7 +13,7 @@ In this project we showcase the use of Event Listeners, vanilla JavaScript, HTML
 We styled this page to emote high action, power-packed jokes. Showcasing CSS skills with a dynamic image background, added fonts and a user-friendly interface. Keeping with continuity each element on the page uses the same color scheme and border choices. 
 
 
-#H2 How to Run
+## How to Run
 
 1. You must have JSON server on your local machine 
 2. Then, in your terminal, run the following command: 
