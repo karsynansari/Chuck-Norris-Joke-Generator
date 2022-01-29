@@ -22,4 +22,4 @@ We styled this page to emote high action, power-packed jokes. Showcasing CSS ski
 1. You must have JSON server on your local machine 
 2. Then, in your terminal, run the following command: 
     `json-server --watch db.json` 
-3. Open the index.html file & prepare to laugh! 
+3. Open the index.html file in your browser & prepare to laugh! 
